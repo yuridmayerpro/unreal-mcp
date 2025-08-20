@@ -24,6 +24,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Kismet2/KismetEditorUtilities.h"
 #include "K2Node_Event.h"
+#include "UObject/Package.h"
 
 FUnrealMCPUMGCommands::FUnrealMCPUMGCommands()
 {
