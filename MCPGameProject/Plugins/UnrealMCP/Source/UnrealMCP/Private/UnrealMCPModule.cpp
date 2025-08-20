@@ -2,7 +2,6 @@
 #include "UnrealMCPBridge.h"
 #include "Modules/ModuleManager.h"
 #include "EditorSubsystem.h"
-#include "Editor.h"
 
 #define LOCTEXT_NAMESPACE "FUnrealMCPModule"
 
