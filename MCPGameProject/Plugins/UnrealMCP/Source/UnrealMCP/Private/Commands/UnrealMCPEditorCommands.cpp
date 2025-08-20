@@ -1,6 +1,7 @@
 #include "Commands/UnrealMCPEditorCommands.h"
 #include "Commands/UnrealMCPCommonUtils.h"
-#include "Editor.h"
+#include "UnrealEdGlobals.h"
+#include "Editor/EditorEngine.h"
 #include "EditorViewportClient.h"
 #include "LevelEditorViewport.h"
 #include "ImageUtils.h"

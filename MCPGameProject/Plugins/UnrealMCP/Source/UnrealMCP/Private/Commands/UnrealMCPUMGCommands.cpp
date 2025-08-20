@@ -1,6 +1,5 @@
 #include "Commands/UnrealMCPUMGCommands.h"
 #include "Commands/UnrealMCPCommonUtils.h"
-#include "Editor.h"
 #include "EditorAssetLibrary.h"
 #include "AssetRegistry/AssetRegistryModule.h"
 #include "Blueprint/UserWidget.h"
