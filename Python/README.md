@@ -1,6 +1,6 @@
 # Unreal MCP
 
-Python bridge for interacting with Unreal Engine 5.5 using the Model Context Protocol (MCP).
+Python bridge for interacting with Unreal Engine 5.6 using the Model Context Protocol (MCP).
 
 ## Setup
 

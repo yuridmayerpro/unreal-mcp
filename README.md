@@ -4,7 +4,7 @@
 <span style="color: #555555">unreal-mcp</span>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.5%2B-orange)](https://www.unrealengine.com)
+[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.6%2B-orange)](https://www.unrealengine.com)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-yellow)](https://www.python.org)
 [![Status](https://img.shields.io/badge/Status-Experimental-red)](https://github.com/chongdashu/unreal-mcp)
 
@@ -70,13 +70,13 @@ All these capabilities are accessible through natural language commands via AI a
 ## 🚀 Quick Start Guide
 
 ### Prerequisites
-- Unreal Engine 5.5+
+- Unreal Engine 5.6+
 - Python 3.12+
 - MCP Client (e.g., Claude Desktop, Cursor, Windsurf)
 
 ### Sample project
 
-For getting started quickly, feel free to use the starter project in `MCPGameProject`. This is a UE 5.5 Blank Starter Project with the `UnrealMCP.uplugin` already configured. 
+For getting started quickly, feel free to use the starter project in `MCPGameProject`. This is a UE 5.6 Blank Starter Project with the `UnrealMCP.uplugin` already configured. 
 
 1. **Prepare the project**
    - Right-click your .uproject file

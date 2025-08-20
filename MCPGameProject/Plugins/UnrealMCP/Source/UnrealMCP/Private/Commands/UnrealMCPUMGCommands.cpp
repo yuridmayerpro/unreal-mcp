@@ -8,7 +8,7 @@
 #include "WidgetBlueprint.h"
 // We'll create widgets using regular Factory classes
 #include "Factories/Factory.h"
-// Remove problematic includes that don't exist in UE 5.5
+// Remove problematic includes that don't exist in UE 5.6
 // #include "UMGEditorSubsystem.h"
 // #include "WidgetBlueprintFactory.h"
 #include "WidgetBlueprintEditor.h"
@@ -509,7 +509,7 @@ TSharedPtr<FJsonObject> FUnrealMCPUMGCommands::HandleSetTextBlockBinding(const T
 		// Create entry node
 		UK2Node_FunctionEntry* EntryNode = nullptr;
 		
-		// Create entry node - use the API that exists in UE 5.5
+		// Create entry node - use the API that exists in UE 5.6
 		EntryNode = NewObject<UK2Node_FunctionEntry>(FuncGraph);
 		FuncGraph->AddNode(EntryNode, false, false);
 		EntryNode->NodePosX = 0;
