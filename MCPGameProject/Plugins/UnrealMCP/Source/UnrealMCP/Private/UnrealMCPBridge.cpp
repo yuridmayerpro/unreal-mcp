@@ -35,7 +35,7 @@
 #include "Components/SphereComponent.h"
 #include "Kismet2/BlueprintEditorUtils.h"
 #include "Kismet2/KismetEditorUtilities.h"
-// UE5.5 correct includes
+// UE5.6 correct includes
 #include "Engine/SimpleConstructionScript.h"
 #include "Engine/SCS_Node.h"
 #include "UObject/Field.h"

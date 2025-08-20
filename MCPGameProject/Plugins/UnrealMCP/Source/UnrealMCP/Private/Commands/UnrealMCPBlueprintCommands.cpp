@@ -802,7 +802,7 @@ TSharedPtr<FJsonObject> FUnrealMCPBlueprintCommands::HandleSetPhysicsProperties(
     if (Params->HasField(TEXT("mass")))
     {
         float Mass = Params->GetNumberField(TEXT("mass"));
-        // In UE5.5, use proper overrideMass instead of just scaling
+        // In UE5.6, use proper overrideMass instead of just scaling
         PrimComponent->SetMassOverrideInKg(NAME_None, Mass);
         UE_LOG(LogTemp, Display, TEXT("Set mass for component %s to %f kg"), *ComponentName, Mass);
     }

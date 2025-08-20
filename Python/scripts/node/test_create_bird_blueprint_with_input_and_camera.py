@@ -355,9 +355,9 @@ def main():
         connect_target_params = {
             "blueprint_name": "BirdBP",
             "source_node_id": get_component_node_id,
-            "source_pin": "BirdMesh",  # Use component name as the output pin name (UE5.5 convention)
+            "source_pin": "BirdMesh",  # Use component name as the output pin name (UE5.6 convention)
             "target_node_id": add_impulse_node_id,
-            "target_pin": "self"  # Change from "Target" to "self" - this is the actual pin name in UE5.5
+            "target_pin": "self"  # Change from "Target" to "self" - this is the actual pin name in UE5.6
         }
         
         response = send_mcp_command("connect_blueprint_nodes", connect_target_params)
@@ -392,7 +392,7 @@ def main():
         logger.info("Pawn properties set successfully!")
 
         # Step 14: Add GetActorOfClass node to BirdBP's BeginPlay
-        # Note: In UE5.5, class references must use the full path format: /Script/ModuleName.ClassName
+        # Note: In UE5.6, class references must use the full path format: /Script/ModuleName.ClassName
         # This format is the standard way Unreal Engine references classes internally:
         # - /Script/ prefix indicates this is a C++ (native) class
         # - ModuleName is the module where the class is defined (e.g., Engine, Game)

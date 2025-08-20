@@ -180,7 +180,7 @@ TSharedPtr<FJsonObject> FUnrealMCPBlueprintNodeCommands::HandleAddBlueprintGetSe
         return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Failed to get event graph"));
     }
     
-    // We'll skip component verification since the GetAllNodes API may have changed in UE5.5
+    // We'll skip component verification since the GetAllNodes API may have changed in UE5.6
     
     // Create the variable get node directly
     UK2Node_VariableGet* GetComponentNode = NewObject<UK2Node_VariableGet>(EventGraph);
@@ -189,7 +189,7 @@ TSharedPtr<FJsonObject> FUnrealMCPBlueprintNodeCommands::HandleAddBlueprintGetSe
         return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Failed to create get component node"));
     }
     
-    // Set up the variable reference properly for UE5.5
+    // Set up the variable reference properly for UE5.6
     FMemberReference& VarRef = GetComponentNode->VariableReference;
     VarRef.SetSelfMember(FName(*ComponentName));
     
@@ -203,7 +203,7 @@ TSharedPtr<FJsonObject> FUnrealMCPBlueprintNodeCommands::HandleAddBlueprintGetSe
     GetComponentNode->PostPlacedNewNode();
     GetComponentNode->AllocateDefaultPins();
     
-    // Explicitly reconstruct node for UE5.5
+    // Explicitly reconstruct node for UE5.6
     GetComponentNode->ReconstructNode();
     
     // Mark the blueprint as modified
@@ -502,7 +502,7 @@ TSharedPtr<FJsonObject> FUnrealMCPBlueprintNodeCommands::HandleAddBlueprintFunct
                             // - Non-actor classes must start with 'U' (e.g., UObject)
                             const FString& ClassName = StringVal;
                             
-                            // TODO: This likely won't work in UE5.5+, so don't rely on it.
+                            // TODO: This likely won't work in UE5.6+, so don't rely on it.
                             UClass* Class = FindObject<UClass>(ANY_PACKAGE, *ClassName);
 
                             if (!Class)

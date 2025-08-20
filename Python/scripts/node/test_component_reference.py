@@ -187,7 +187,7 @@ def main():
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.connect(("127.0.0.1", 55557))
         
-        # In UE5.5, the output pin of a component reference is named after the component itself
+        # In UE5.6, the output pin of a component reference is named after the component itself
         component_name = "TestMesh"  # Use the same name as defined in the component
         connect_target_params = {
             "blueprint_name": "TestCompRefBP",
